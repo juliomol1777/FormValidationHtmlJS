@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="control.js"></script>
+    <style>
+        label {
+            display: inline-block;
+            width: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="padding: 30px;">
+        <form name="form" id="form" action="#">
+            <h1>Ingreso al sistema</h1>
+            <div style="padding-bottom: 10px;">
+                <label for="usuario">Usuario:</label>
+                <input type="text" name="usuario" id="usuario" placeholder="usu@rio">
+            </div>
+            <div style="padding-bottom: 10px;">
+                <label for="clave">Clave:</label>
+                <input type="password" name="clave" id="clave">
+            </div>
+            <input type="button" value="Ingresar" onclick="validar()">
+        </form>
+    </div>
+    <div style="padding: 30px;">
+        <form name="form2" id="form" action="#" onsubmit="return validar2()">
+            <h1>Ingreso al sistema</h1>
+            <div style="padding-bottom: 10px;">
+                <label for="usuario">Usuario:</label>
+                <input type="text" name="usuario" id="usuario" placeholder="usu@rio">
+            </div>
+            <div style="padding-bottom: 10px;">
+                <label for="clave">Clave:</label>
+                <input type="password" name="clave" id="clave">
+            </div>
+            <input type="submit" value="Ingresar">
+        </form>
+    </div>
+</body>
+
+</html>
